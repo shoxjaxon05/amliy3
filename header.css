@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    padding: 2% 5%;
+}
+header a {
+    font-family: "Space Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+}
+.header1{    
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content:space-between;
+}
+.header1 button{
+    border: none;
+    padding: 10px 20px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(252, 183, 43, 1);    
+    border: 2px solid rgba(252, 183, 43, 1);
+
+}
+.header1 .headerScoot{    
+    width: 75%;
+    display: flex;
+    align-items: end;
+    justify-content:start;
+}
+.header1 .headerScoot .headerScootDepartment a{
+    margin: 0 10px;    
+    text-decoration: none;
+    color: rgba(147, 156, 170, 1);
+}
+.header1 .headerScoot .headerScootDepartment a:hover{
+    color: rgba(252, 183, 43, 1);
+}
+.header1 button:hover{
+    color: rgba(252, 183, 43, 1);
+    border: 2px solid rgba(252, 183, 43, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.header {
+    display: none;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+}
+.logo {
+    height: 40px;
+    margin: 0 auto;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Hide sidebar initially */
+    height: 100%;
+    width: 75%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s ease;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.sidebar .get-scootin {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffaa00;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 375px) {
+    .menu-icon {
+        display: block;
+    }
+    .header1 {
+        display: none; 
+    }
+    .header {
+        z-index: 1000;
+        overflow: hidden;
+        display: flex; 
+    }
+}
+
+.sidebar.active {
+    left: 0;
+}

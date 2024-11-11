@@ -1,0 +1,225 @@
+body p{
+        font-family: "Lexend Deca", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+}
+body h2,body h1,body h3, body button{
+    font-family: "Space Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+}
+.banner {
+    display: flex;
+    align-items: center;
+    background-image: url(./img/motoImg.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    justify-content: space-between;
+    color: #fff;
+}
+.bannerTextImg{
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 1fr 2fr 4fr;
+}
+.bannerTextImg img{
+    width: 80%;
+}
+.bannerText {
+    padding: 100px 50px;
+    background-color: rgba(47, 59, 89, 0.7);
+    width: 100%;
+}
+
+.bannerText h1 {
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.bannerText p {
+    font-size: 100%;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #bbb;
+}
+
+.bannerButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.bannerImage {
+    max-width: 40%;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+.steps {
+    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    background-color: #fff;
+}
+
+.step {
+    margin: 50px auto;
+    text-align: center;
+    width: 200px;
+}
+
+.step .icon img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+.step .icon{
+    margin: 20px auto;
+    width: 75px;
+    border-radius: 50%;
+    background-color: #ffaa00;
+}
+.step h2 {
+    font-size: 18px;
+}
+
+.step p {
+    font-size: 14px;
+    color: #666;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.info-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px;
+}
+
+
+.info-box .infoBoxImg {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.info-box1 .infoBoxImg {
+    width: 100%;
+    height: 105%;
+    display: flex;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20vh;
+}
+.info-box .infoBoxImg img{
+    width: 100%;
+}
+.info-box .son{
+    width: 30%;
+    margin: 0% 46%;
+    position: absolute;
+}
+.info-box .son2{
+    width: 30%;
+    margin: 20px -3%;
+    position: absolute;
+}
+.info-box .son3{
+    width: 30%;
+    margin: 0% 46%;
+    position: absolute;
+}
+.text {
+    width: 80%;
+}
+
+.text h2 {
+    color: #333;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.button {
+    background-color: #ffaa00;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #fa0;
+    border: 2px solid #ffaa00;
+}
+
+@media (max-width: 769px) {
+    .bannerImg{
+        display: none;
+    }
+    .bannerTextImg{
+        grid-template-columns: 1fr;
+    }
+    .steps{
+        grid-template-columns: 1fr;
+    }
+    .info-box{
+        text-align: center;
+        position: relative;
+        grid-template-columns: 1fr;
+    }
+    .info-box .son{
+        width: 30%;
+        margin: 0% 70%;
+        margin-top: 120%;
+        position: absolute;
+    }
+    .info-box .son2{
+        width: 30%;
+        margin: 20px -3%;
+        margin-top: -100%;
+        position: absolute;
+    }
+    .info-box1 .infoBoxImg {
+        margin: 10px;
+        position: relative;
+    }
+    .info-box .son3{
+        
+        margin: 0% 70%;
+        margin-top: 100%;
+        position: absolute;
+    }
+}
